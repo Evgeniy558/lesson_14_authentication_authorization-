@@ -17,9 +17,11 @@ export const Tasks = () => {
       <Helmet>
         <title>Your tasks</title>
       </Helmet>
-      <TaskList>
-        <div>{isLoading && "Request in progress..."}</div>
-      </TaskList>
+      {/*
+        <TaskList>
+          <div>{isLoading && "Request in progress..."}</div>
+        </TaskList>
+  */}
     </div>
   );
 };

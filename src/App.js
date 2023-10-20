@@ -1,9 +1,7 @@
 import { useEffect } from "react";
 import "./App.css";
-
 import { fetchTasks } from "./redux/operation";
 import { useDispatch } from "react-redux";
-
 import { useAuth } from "./hooks/userAuth";
 import { Route, Routes } from "react-router-dom";
 import { HomePage } from "./components/HomePage/HomePage";
@@ -42,7 +40,7 @@ function App() {
         />
         <Route
           path="/tasks"
-          element={<PrivateRoute redirectTo="login" component={<Tasks />} />}
+          element={<PrivateRoute redirectTo="/login" component={<Tasks />} />}
         />
       </Route>
     </Routes>
