@@ -6,10 +6,10 @@ const TaskCounter = () => {
   const count = useSelector(selectTaskCount);
 
   return (
-    <>
+    <div className={css.container}>
       <p className={css.text}>Active: {count.active}</p>
       <p className={css.text}>Completed: {count.completed}</p>
-    </>
+    </div>
   );
 };
 export default TaskCounter;

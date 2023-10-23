@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { Helmet } from "react-helmet";
 import { useDispatch, useSelector } from "react-redux";
-import { fetchTasks } from "../../redux/operation";
+import { fetchTasks } from "../../redux/tasks/operation";
 import { selectIsLoading } from "../../redux/filters/selectors";
 import TaskList from "../TaskList/TaskList";
 

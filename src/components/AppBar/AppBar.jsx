@@ -1,6 +1,4 @@
 import css from "./AppBar.module.css";
-import StatusFilter from "../Status Filter/StatusFilter";
-import TaskCounter from "../TaskCounter/TaskCounter";
 import { useAuth } from "../../hooks/userAuth";
 import { Navigation } from "../Navigation/Navigation";
 import { UserMenu } from "../UserMenu/UserMenu";

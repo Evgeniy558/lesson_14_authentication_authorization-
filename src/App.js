@@ -1,10 +1,9 @@
 import { useEffect } from "react";
 import "./App.css";
-import { fetchTasks } from "./redux/operation";
 import { useDispatch } from "react-redux";
 import { useAuth } from "./hooks/userAuth";
 import { Route, Routes } from "react-router-dom";
-import { HomePage } from "./components/HomePage/HomePage";
+import { HomePage } from "./components/pages/Home";
 import { RestrictedRoute } from "./components/RestrictedRoute";
 import { Register } from "./components/pages/Register";
 import { PrivateRoute } from "./components/PrivateRoute";

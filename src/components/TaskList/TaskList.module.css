@@ -1,3 +1,7 @@
 .elItem {
   list-style: none;
 }
+.containerAppTasks {
+  display: flex;
+  justify-content: space-between;
+}

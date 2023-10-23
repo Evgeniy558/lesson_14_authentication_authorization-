@@ -5,6 +5,9 @@ import {
   selectVisibleTasks,
 } from "../../redux/filters/selectors";
 import css from "./TaskList.module.css";
+import TaskForm from "../TaskForm/TaskForm";
+import TaskCounter from "../TaskCounter/TaskCounter";
+import StatusFilter from "../Status Filter/StatusFilter";
 
 const TaskList = () => {
   const isLoading = useSelector(selectIsLoading);
@@ -12,6 +15,12 @@ const TaskList = () => {
 
   return (
     <>
+      <div className={css.containerAppTasks}>
+        <TaskCounter />
+        <StatusFilter />
+      </div>
+
+      <TaskForm />
       {!isLoading &&
         visibleTasks.map((task) => {
           return (

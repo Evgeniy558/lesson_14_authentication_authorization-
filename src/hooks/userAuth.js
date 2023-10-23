@@ -1,5 +1,4 @@
 import { useSelector } from "react-redux";
-import { selectIsLoading } from "../redux/filters/selectors";
 import {
   selectIsLoggedIn,
   selectIsRefreshing,
