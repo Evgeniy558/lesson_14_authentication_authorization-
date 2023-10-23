@@ -9,6 +9,8 @@
 
 The project is a frontend application aimed at authentication and task management. Users can register, log in, view, and manage tasks. The application ensures that only authenticated users can access certain features, and it provides feedback mechanisms for user interactions.
 
+**Live Demo**: [https://main--comfy-kheer-da7047.netlify.app/](https://main--comfy-kheer-da7047.netlify.app/)
+
 ## Technologies
 
 Project is created with:
