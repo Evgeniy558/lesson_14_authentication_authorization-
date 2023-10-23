@@ -11,7 +11,7 @@ import {
   REHYDRATE,
   PAUSE,
 } from "redux-persist";
-import { tasksReducer } from "./Slices/tasksSlicer";
+import { tasksReducer } from "./tasks/tasksSlicer";
 import { filtersReducer } from "./Slices/filterSlicer";
 import { authReducer } from "./auth/authSlice";
 

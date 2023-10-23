@@ -1,2 +1,2 @@
 export * from "./filterSlicer";
-export * from "./tasksSlicer";
+export * from "../tasks/tasksSlicer";
