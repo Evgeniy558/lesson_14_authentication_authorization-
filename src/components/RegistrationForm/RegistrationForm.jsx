@@ -31,7 +31,7 @@ export const RegistrationForm = () => {
         <input
           type="password"
           name="password"
-          pattern=".{8,}"
+          pattern=".{7,}"
           required
           title="The password must be at least 8 characters long."
         />

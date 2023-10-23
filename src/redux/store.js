@@ -11,9 +11,9 @@ import {
   REHYDRATE,
   PAUSE,
 } from "redux-persist";
-import { tasksReducer } from "./tasks/tasksSlicer";
+import { tasksReducer } from "./Slices/tasksSlicer";
 import { filtersReducer } from "./Slices/filterSlicer";
-import { authReducer } from "./auth/authSlice";
+import { authReducer } from "./Slices/authSlice";
 
 // Persisting token field from auth slice to localstorage
 const authPersistConfig = {
