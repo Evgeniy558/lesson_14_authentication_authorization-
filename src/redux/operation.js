@@ -18,7 +18,7 @@ export const addTask = createAsyncThunk(
   "tasks/addTask",
   async (text, thunkApi) => {
     try {
-      const responce = await axios.post("/tasks", { text });
+      const responce = await axios.post(`${URLTASKS}/tasks`, { text });
       return responce.data;
     } catch (error) {
       return thunkApi.rejectWithValue(error.message);
@@ -30,7 +30,7 @@ export const deleteTask = createAsyncThunk(
   "tasks/deleteTask",
   async (task, thunkAPI) => {
     try {
-      const responce = await axios.delete(`/tasks/${task.id}`);
+      const responce = await axios.delete(`${URLTASKS}/tasks/${task.id}`);
       console.log("del", responce);
       return responce.data;
     } catch (error) {
@@ -42,7 +42,7 @@ export const toggleCompleted = createAsyncThunk(
   "tasks/toggleCompleted",
   async (task, thunkAPI) => {
     try {
-      const responce = await axios.put(`/tasks/${task.id}`, {
+      const responce = await axios.put(`${URLTASKS}/tasks/${task.id}`, {
         completed: !task.completed,
       });
       return responce.data;
