@@ -9,7 +9,7 @@ export const Tasks = () => {
   const isLoading = useSelector(selectIsLoading);
   const dispatch = useDispatch();
   useEffect(() => {
-    dispatch(fetchTasks);
+    dispatch(fetchTasks());
   }, [dispatch]);
 
   return (

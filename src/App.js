@@ -11,14 +11,14 @@ import { PrivateRoute } from "./components/PrivateRoute";
 import { Tasks } from "./components/pages/Tasks";
 import { Login } from "./components/pages/Login";
 import { Layout } from "./components/Layout/Layout";
+import { refreshUser } from "./redux/auth/operations";
 
 function App() {
   const dispatch = useDispatch();
-  // const isLoading = useSelector(selectIsLoading);
-  // const error = useSelector(selectError);
+
   const { isRefreshing } = useAuth();
   useEffect(() => {
-    dispatch(fetchTasks());
+    dispatch(refreshUser());
   }, [dispatch]);
   return isRefreshing ? (
     <b>Refreshing user...</b>
