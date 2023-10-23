@@ -28,7 +28,13 @@ export const RegistrationForm = () => {
       </label>
       <label className={css.label}>
         Password
-        <input type="password" name="password" />
+        <input
+          type="password"
+          name="password"
+          pattern=".{8,}"
+          required
+          title="The password must be at least 8 characters long."
+        />
       </label>
       <button type="submit">Register</button>
     </form>

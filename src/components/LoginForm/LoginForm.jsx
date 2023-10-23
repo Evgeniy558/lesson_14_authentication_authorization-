@@ -23,7 +23,13 @@ export const LoginForm = () => {
 
       <label className={css.label}>
         Password
-        <input type="text" name="password" />
+        <input
+          type="text"
+          name="password"
+          pattern=".{8,}"
+          required
+          title="The password must be at least 8 characters long."
+        />
       </label>
       <button type="submit">Log in</button>
     </form>
