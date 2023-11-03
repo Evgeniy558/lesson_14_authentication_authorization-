@@ -1,6 +1,7 @@
 import { useDispatch } from "react-redux";
 import { register } from "../../redux/auth/operations";
 import css from "./RegistrationForm.module.css";
+import Button from "../Button/Button";
 
 export const RegistrationForm = () => {
   const dispatch = useDispatch();
@@ -20,11 +21,11 @@ export const RegistrationForm = () => {
     <form className={css.form} onSubmit={handleSubmit}>
       <label className={css.label}>
         Username
-        <input type="text" name="name" />
+        <input type="text" name="name" className={css.field} />
       </label>
       <label className={css.label}>
         Email
-        <input type="email" name="email" />
+        <input type="email" name="email" className={css.field} />
       </label>
       <label className={css.label}>
         Password
@@ -34,9 +35,12 @@ export const RegistrationForm = () => {
           pattern=".{7,}"
           required
           title="The password must be at least 8 characters long."
+          className={css.field}
         />
       </label>
-      <button type="submit">Register</button>
+      <Button type={"submit"} style={{ width: "fit-content" }}>
+        Register
+      </Button>
     </form>
   );
 };

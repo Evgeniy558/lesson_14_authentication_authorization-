@@ -3,11 +3,11 @@ import { RegistrationForm } from "../RegistrationForm/RegistrationForm";
 
 export const Register = () => {
   return (
-    <div>
+    <section style={{ display: "flex", justifyContent: "center" }}>
       <Helmet>
         <title>Registration</title>
       </Helmet>
       <RegistrationForm />
-    </div>
+    </section>
   );
 };

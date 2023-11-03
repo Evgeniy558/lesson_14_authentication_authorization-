@@ -7,7 +7,6 @@ export const selectFilter = (state) => state.filters.status;
 export const selectVisibleTasks = createSelector(
   [selectTasks, selectFilter],
   (tasks, statusFilter) => {
-    console.log("Calculating selectVisibleTasks");
     const tasksList =
       statusFilter === "active"
         ? tasks.filter((task) => !task.completed)
@@ -19,7 +18,6 @@ export const selectVisibleTasks = createSelector(
 );
 
 export const selectTaskCount = createSelector([selectTasks], (tasks) => {
-  console.log("Calculating task count");
   const taskCount = tasks.reduce(
     (acc, task) => {
       if (task.completed) {
